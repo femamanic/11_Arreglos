@@ -9,9 +9,14 @@ int main () {
     int A[7], B[7], Tp[7], Tmin[7], j = 1, Tmaxi, k = 1;
     string dTmin[7], Tmax[7];
     for (int i = 0; i < 7; i++) {
-        cout << "\nDia " << dias[i] << "\n";
-        cout << "Ingrese la temperatura minima: "; cin >> A[i];
-        cout << "Ingrese la temperatura maxima: "; cin >> B[i];
+        do {
+            cout << "\nDia " << dias[i] << "\n";
+            cout << "Ingrese la temperatura minima: "; cin >> A[i];
+            cout << "Ingrese la temperatura maxima: "; cin >> B[i];
+            if (A[i] > B[i]) {
+                cout << "La temperatura minima no puede ser mayor que la temperatura maxima.\n";
+            }
+        } while (A[i] > B[i]);
         Tp[i] = (A[i] + B[i]) / 2;
     }
     cout << "====================================\n";
