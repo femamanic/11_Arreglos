@@ -17,12 +17,12 @@ int main () {
         }
     }
     cout << "Los elementos pares son : ";
-    for (j = 0; j < n; j++) {
-        cout << B[j] << " ";
+    for (int i = 0; i < j; i++) {
+        cout << B[i] << " ";
     }
     cout << "\nLos elementos impares son : ";
-    for (k = 0; k < n; k++) {
-        cout << C[k] << " ";
+    for (int i = 0; i < k; i++) {
+        cout << C[i] << " ";
     }
     return 0;
 }
